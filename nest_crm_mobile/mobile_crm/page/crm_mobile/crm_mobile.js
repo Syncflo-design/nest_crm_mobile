@@ -8,7 +8,7 @@ frappe.pages['crm-mobile'].on_page_load = function(wrapper) {
         single_column: true
     });
 
-    const BUILD_MARKER = 'v0.1.0-2026-05-17';
+    const BUILD_MARKER = 'v0.1.2-2026-05-17-mobile-hide-sidebar-bashfix';
     console.log('NestERP CRM Mobile loaded:', BUILD_MARKER);
 
     const CRM_HTML = [
@@ -56,6 +56,13 @@ frappe.pages['crm-mobile'].on_page_load = function(wrapper) {
         '.crm-bottomnav button { flex: 1; padding: 14px; border: none; background: transparent; font-size: 14px; cursor: pointer; color: #475569; }',
         '.crm-bottomnav button.active { color: #1F4E79; font-weight: 700; border-top: 2px solid #2E75B6; }',
         '.crm-note { font-size: 12px; color: #94A3B8; padding: 12px; text-align: center; }',
+        '@media (max-width: 991px) {',
+        '  .layout-side-section, .desk-sidebar, .sidebar-toggle-btn { display: none !important; }',
+        '  .page-head, .page-title, .page-actions { display: none !important; }',
+        '  .layout-main-section-wrapper, .layout-main-section, .container, .layout-main { width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; flex: 1 1 100% !important; }',
+        '  .page-body { padding: 0 !important; }',
+        '  body { overflow-x: hidden; }',
+        '}',
         '</style>',
         '<div class="crm-app">',
         '  <div class="crm-topbar">',
@@ -126,7 +133,6 @@ frappe.pages['crm-mobile'].on_page_load = function(wrapper) {
             const titles = { list: 'Customers', customer: 'Customer', order: 'New Order', drafts: 'My Orders' };
             document.getElementById('crm-view-title').textContent = titles[name] || '';
             document.getElementById('crm-back').style.display = (name === 'list' || name === 'drafts') ? 'none' : 'inline-block';
-            // bottom nav state
             document.getElementById('crm-nav-customers').classList.toggle('active', name !== 'drafts');
             document.getElementById('crm-nav-drafts').classList.toggle('active', name === 'drafts');
         },
