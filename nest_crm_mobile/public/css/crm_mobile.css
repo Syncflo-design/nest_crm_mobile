@@ -1,0 +1,60 @@
+/* NestERP CRM Mobile - rep screen styles */
+/* Loaded via <link> injection from crm_mobile.js at page load */
+
+.crm-app { font-family: "Segoe UI", system-ui, sans-serif; background: #F1F5F9; min-height: 100vh; padding-bottom: 80px; }
+.crm-topbar { background: #1F4E79; color: #fff; padding: 14px 16px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 50; }
+.crm-back-btn { background: rgba(255,255,255,0.15); border: none; color: #fff; font-size: 18px; padding: 4px 12px; border-radius: 6px; cursor: pointer; }
+.crm-title { font-size: 18px; font-weight: 600; }
+.crm-view { padding: 16px; }
+.crm-search { width: 100%; padding: 12px 14px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 16px; margin-bottom: 12px; box-sizing: border-box; }
+.crm-list { display: flex; flex-direction: column; gap: 8px; }
+.crm-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 14px 16px; cursor: pointer; transition: background .12s; }
+.crm-card:hover { background: #F8FAFC; }
+.crm-card-title { font-size: 15px; font-weight: 600; color: #1E293B; }
+.crm-card-sub { font-size: 12px; color: #64748B; margin-top: 4px; }
+.crm-empty { color: #94A3B8; font-size: 13px; text-align: center; padding: 20px; }
+.crm-customer-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.crm-customer-card h2 { margin: 0 0 6px 0; font-size: 20px; color: #1E293B; }
+.crm-meta { font-size: 13px; color: #64748B; margin-bottom: 12px; }
+.crm-info > div { padding: 6px 0; border-top: 1px solid #F1F5F9; font-size: 14px; }
+.crm-info > div:first-child { border-top: none; }
+.crm-info strong { color: #475569; }
+.crm-primary { width: 100%; background: #2E75B6; color: #fff; border: none; padding: 14px 16px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; margin: 8px 0; }
+.crm-primary:hover { background: #1F5F9E; }
+.crm-primary:disabled { background: #94A3B8; cursor: not-allowed; }
+.crm-view h3 { font-size: 14px; color: #64748B; text-transform: uppercase; letter-spacing: 0.5px; margin: 16px 0 8px 0; }
+.crm-order-header { background: #1F4E79; color: #fff; padding: 12px 16px; border-radius: 8px; margin-bottom: 12px; font-size: 14px; }
+.crm-item-row { background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; margin-bottom: 6px; }
+.crm-item-info { flex: 1; }
+.crm-item-name { font-size: 14px; font-weight: 600; color: #1E293B; }
+.crm-item-sub { font-size: 12px; color: #64748B; margin-top: 2px; }
+.crm-add-btn { background: #2E75B6; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; }
+.crm-cart { background: #fff; border: 2px solid #2E75B6; border-radius: 10px; padding: 14px; margin-top: 16px; }
+.crm-cart h4 { margin: 0 0 10px 0; color: #1E293B; }
+.crm-cart-line { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid #F1F5F9; }
+.crm-cart-info { flex: 1; }
+.crm-cart-info > div:first-child { font-size: 13px; font-weight: 600; }
+.crm-cart-sub { font-size: 11px; color: #64748B; }
+.crm-qty-ctrl { display: flex; align-items: center; gap: 6px; }
+.crm-qty-ctrl button { width: 28px; height: 28px; border: 1px solid #CBD5E1; background: #F8FAFC; border-radius: 4px; font-size: 16px; cursor: pointer; }
+.crm-qty-ctrl span { min-width: 28px; text-align: center; font-weight: 600; }
+.crm-cart-line-total { min-width: 80px; text-align: right; font-size: 13px; font-weight: 600; }
+.crm-cart-total { padding: 10px 0; font-size: 16px; font-weight: 700; color: #1F4E79; text-align: right; border-top: 2px solid #E2E8F0; margin-top: 8px; }
+.crm-bottomnav { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #CBD5E1; display: flex; z-index: 100; }
+.crm-bottomnav button { flex: 1; padding: 14px; border: none; background: transparent; font-size: 14px; cursor: pointer; color: #475569; }
+.crm-bottomnav button.active { color: #1F4E79; font-weight: 700; border-top: 2px solid #2E75B6; }
+.crm-note { font-size: 12px; color: #94A3B8; padding: 12px; text-align: center; }
+
+@media (max-width: 991px) {
+  .layout-side-section, .desk-sidebar, .sidebar-toggle-btn { display: none !important; }
+  .page-head, .page-title, .page-actions { display: none !important; }
+  .layout-main-section-wrapper, .layout-main-section, .container, .layout-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex: 1 1 100% !important;
+  }
+  .page-body { padding: 0 !important; }
+  body { overflow-x: hidden; }
+}
