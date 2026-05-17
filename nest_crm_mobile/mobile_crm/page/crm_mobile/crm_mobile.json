@@ -1,0 +1,15 @@
+{
+  "creation": "2026-05-17 00:00:00",
+  "doctype": "Page",
+  "icon": "octicon octicon-person",
+  "module": "Mobile CRM",
+  "name": "crm-mobile",
+  "page_name": "crm-mobile",
+  "roles": [
+    { "role": "Sales User" },
+    { "role": "Sales Manager" },
+    { "role": "System Manager" }
+  ],
+  "standard": "Yes",
+  "title": "CRM Mobile"
+}

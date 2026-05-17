@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+.idea/
+.vscode/
+*.swp
+.DS_Store
+.env
+node_modules/
+dist/
+build/
